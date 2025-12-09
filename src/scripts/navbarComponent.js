@@ -3,37 +3,31 @@ function navbarSectionComponent() {
         sections: {
             "Home": {
                 "Icon": "fa-solid fa-house",
-                "TooltipMessage": "Home",
                 "Link": "#mainSection"
             },
 
-            "Intro": {
+            "About Me": {
                 "Icon": "fa-solid fa-user",
-                "TooltipMessage": "About Me",
                 "Link": "#aboutMeSection"
             },
 
-            "TechSkills": {
+            "Technical Skills": {
                 "Icon": "fa-solid fa-code",
-                "TooltipMessage": "Technical Skills",
                 "Link": "#technicalSkillSection"
             },
 
             "Projects": {
                 "Icon": "fa-solid fa-folder-open",
-                "TooltipMessage": "My Projects",
                 "Link": "#projectSection"
             },
 
-            "Education": {
+            "Education and Certificates": {
                 "Icon": "fa-solid fa-graduation-cap",
-                "TooltipMessage": "Education and Certificates",
                 "Link": "#educationSection"
             },
 
-            "Contacts": {
+            "Contact Me": {
                 "Icon": "fa-solid fa-phone-flip",
-                "TooltipMessage": "Contact Me",
                 "Link": "#contactSection"
             }
         }
