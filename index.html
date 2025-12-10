@@ -54,9 +54,9 @@
     </aside>
 
     <main id="mainSection" class="flex-1 p-3">
-        <div class="flex w-fit mx-auto mt-10 mb-64 space-x-12">
+        <div class="flex w-fit mx-auto mt-10 mb-64 px-36 bg-gray-800 space-x-24">
             <img
-                src="images/francis_heroImage.jpg"
+                src="images/francis_heroImage.png"
                 class="h-[700px]">
 
             <div class="flex flex-col my-auto">
@@ -89,14 +89,14 @@
                     </p>
                 </div>
 
-                <div class="flex flex-wrap p-3 justify-center items-center gap-16">
+                <div class="flex flex-wrap p-3 justify-center items-start gap-16">
                     <template x-for="(category, name) in subcategories" :key="name">
                         <!-- SubCategory: Can be added, edited, and deleted in dynamic webpage -->
                         <div class="flex flex-col">
                             <h4 class="font-bold text-4xl">
                                 <span x-text="name"></span>
                             </h4>
-                            <ul class="ml-5 text-xl">
+                            <ul class="ml-5 text-xl list-disc">
                                 <template x-for="element in category">
                                     <li x-text="element"></li>
                                 </template>
@@ -113,13 +113,13 @@
             class="flex flex-col mx-16 my-16">
             <!-- Technical Skills: Can be edited in dynamic webpage -->
             <h3 class="font-bold text-6xl">Technical Skills</h3>
-            <div class="flex flex-wrap p-3 justify-center items-center gap-16">
+            <div class="flex flex-wrap p-3 justify-center items-start gap-16">
                 <template x-for="(category, name) in subcategories" :key="name">
                     <div class="flex flex-col">
                         <h4 class="font-bold text-4xl">
                             <span x-text="name"></span>
                         </h4>
-                        <ul class="ml-5 text-xl">
+                        <ul class="ml-5 text-xl list-disc">
                             <template x-for="element in category">
                                 <li x-text="element"></li>
                             </template>
@@ -136,20 +136,23 @@
             <h3 class="font-bold text-6xl">Projects</h3>
 
             <!-- Projects: Can be edited in dynamic webpage -->
-            <div class="flex flex-wrap p-3 justify-center items-center gap-5">
+            <div class="flex flex-wrap p-3 justify-center items-stretch gap-5">
                 <template x-for="(project, name) in projects" :key="name">
-                    <div class="w-[400px] bg-gray-800 rounded-2xl">
+                    <div class="flex flex-col w-[400px] bg-gray-800 rounded-2xl">
                         <img
                             :src="`images/${project.Image}`"
-                            class="w-full h-[225px] bg-gray-700 rounded-2xl object-contain">
+                            class="w-full min-h-[225px] max-h-[225px] bg-gray-700 rounded-2xl object-contain">
+                        <!-- No, 'h-[225px]' does not work. I don't know how. I don't know why. Refer to my life motto. -->
 
-                        <div class="flex flex-col p-5 space-y-5">
-                            <h5 class="font-bold text-xl">
-                                <span x-text="name"></span>
-                            </h5>
-                            <p class="wrap-break-word font-light text-justify">
-                                <span x-text="project.Description"></span>
-                            </p>
+                        <div class="flex flex-col p-5 gap-5 justify-between h-full">
+                            <div>
+                                <h5 class="font-bold text-xl">
+                                    <span x-text="name"></span>
+                                </h5>
+                                <p class="wrap-break-word font-light text-justify">
+                                    <span x-text="project.Description"></span>
+                                </p>
+                            </div>
                             
                             <a
                                 :href="project.Link"

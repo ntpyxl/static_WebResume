@@ -2,19 +2,23 @@ function techSkillComponent() {
     return {
         "subcategories": {
             "Front-end": [
-                "Front-end lorem ipsum",
-                "Front-end lorem ipsum",
-                "Front-end lorem ipsum",
-                "Front-end lorem ipsum",
-                "Front-end lorem ipsum"
+                "HTML 5",
+                "CSS 3",
+                "Tailwind CSS",
+                "JavaScript",
+                "AlpineJS",
+                "ReactJS"
             ],
 
             "Back-end": [
-                "Back-end lorem ipsum",
-                "Back-end lorem ipsum",
-                "Back-end lorem ipsum",
-                "Back-end lorem ipsum",
-                "Back-end lorem ipsum"
+                "PHP",
+                "MySQL"
+            ],
+
+            "Programming": [
+                "Python",
+                "Java",
+                "C++"
             ]
             
         }
