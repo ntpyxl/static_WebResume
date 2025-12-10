@@ -7,14 +7,19 @@ function educationCertificationComponent() {
         },
 
         "certifications": {
-            "Edu Lorem Ipsum": {
+            "Emilio Aguinaldo College - Cavite (SHS)": {
                 "Type": "Education",
-                "Description": "Project Description Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+                "Description": "I graduated with honors under the strand of Technical-Vocational Livelihood - Information and Communication Technology on June 2022."
             },
 
-            "Certi Lorem Ipsum": {
+            "Introduction to DevOps": {
                 "Type": "Certificate",
-                "Description": "Project Description Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+                "Description": "A coursera course published by IBM. Issued to me on August 2024. I learned about how the DevOps and agile software development life cycle works."
+            },
+
+            "Python for Data Science, AI & Development": {
+                "Type": "Certificate",
+                "Description": "A Coursera course published by IBM. Issued to me on July 2024. I learned about how to use Python and libraries such as numpy, pandas, and matplotlib in the field of Data Science."
             }
             
         }
